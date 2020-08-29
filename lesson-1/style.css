@@ -1,0 +1,101 @@
+html {
+    font-size: 62.5%;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/*----------------------------------------
+| typography
+----------------------------------------*/
+.heading-primary {
+    font-size: 4rem;
+    flex: none;
+}
+
+.heading-white {
+    color: white;
+}
+
+.heading-logo--main {
+    font-size: 3rem
+}
+
+.heading-logo--sub {
+    font-size: 2rem;
+}
+
+/*----------------------------------------
+| header
+----------------------------------------*/
+.header {
+    height: 85vh;
+    background-image: url(./image/image-header.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.header__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+}
+
+/*----------------------------------------
+| navigation
+----------------------------------------*/
+.navigation__nav {
+    height: 10rem;
+    width: 44rem;
+    margin-left: auto;
+    padding-right: 2rem;
+}
+
+.navigation__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.2rem;
+    padding-top: 2rem;
+}
+
+.navigation__item {
+    padding: 0 .4rem 1rem .4rem;
+}
+
+.navigation__item:hover {
+    border-bottom: 3px solid black;
+    transition-duration: .2s;
+}
+
+.navigation__link {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .navigation__nav {
+        display: none;
+    }
+}
+
+.navigation__button {
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 600px) {
+    .navigation__button {
+        display: none;
+    }
+
+}
